@@ -21,20 +21,24 @@ authors="$USER_NAME$" #optional
 # A list of mods - how many allowed here is determined by the individual mod loader
 [[mods]] #mandatory
     # The modid of the mod
-    modId="simplecordinateshud" #mandatory
+    modId="simplecoordinateshud" #mandatory
     # The version number of the mod - there's a few well known ${} variables useable here or just hardcode it
     version="1.0.0" #mandatory
      # A display name for the mod
-    displayName="SimpleCordinatesHud" #mandatory
+    displayName="SimpleCoordinatesHud" #mandatory
     # A URL to query for updates for this mod. See the JSON update specification <here>
     updateJSONURL="" #optional
+    # A URL to refer people to when problems occur with this mod
+    issueTrackerURL="https://github.com/TastyPie2/SimpleCoordinatesHud/issues" #optional
+    # A URL for the "homepage" for this mod, displayed in the mod UI
+    displayURL="https://github.com/TastyPie2/SimpleCoordinatesHud" #optional
     # The description text for the mod (multi line!) (#mandatory)
     description='''
     This is a simple mod that adds a cordinate display to the in-game HUD.
     '''
 
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
-[[dependencies.simplecordinateshud]] #optional
+[[dependencies.simplecoordinateshud]] #optional
     # the modid of the dependency
     modId="forge" #mandatory
     # Does this dependency have to exist - if not, ordering below must be specified
@@ -46,7 +50,7 @@ authors="$USER_NAME$" #optional
     # Side this dependency is applied on - BOTH, CLIENT or SERVER
     side="CLIENT"
 # Here's another dependency
-[[dependencies.simplecordinateshud]]
+[[dependencies.simplecoordinateshud]]
     modId="minecraft"
     mandatory=true
     versionRange="1.19"

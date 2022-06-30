@@ -1,4 +1,4 @@
-package com.tasty.simplecordinateshud;
+package com.tasty.simplecoordinateshud;
 import com.mojang.blaze3d.vertex.PoseStack;
 
 import net.minecraft.client.Minecraft;
